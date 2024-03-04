@@ -6,13 +6,13 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:22:12 by souchane          #+#    #+#             */
-/*   Updated: 2024/02/26 18:25:29 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/04 19:52:00 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 
-void check(t_game *game)
+void	check(t_game *game)
 {
 	check_player(game);
 	check_coll(game);

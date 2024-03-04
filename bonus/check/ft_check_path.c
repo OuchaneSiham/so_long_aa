@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:23:37 by souchane          #+#    #+#             */
-/*   Updated: 2024/02/27 20:34:25 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/04 22:46:35 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void flood_fill(char **tab, int x, int y)
 {
-	if (tab[y][x] != '0' && tab[y][x] != 'C'  && tab[y][x] != 'P' && tab[y][x] != 'E')
+	if (tab[y][x] != '0' && tab[y][x] != 'C'
+	&& tab[y][x] != 'P' && tab[y][x] != 'E')
 		return ;
 	tab[y][x] = 'S';
 	flood_fill(tab, x - 1, y);
@@ -23,6 +24,18 @@ void flood_fill(char **tab, int x, int y)
 	flood_fill(tab, x , y + 1);
 }
 
+void free_tab(char **tab)
+{
+	int	i;
+	
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+}
 void check_path(t_game *game)
 {
 	int x;
@@ -50,4 +63,5 @@ void check_path(t_game *game)
 		}
 		i++;
 	}
+	free_tab(tab);
 }

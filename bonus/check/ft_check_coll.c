@@ -6,21 +6,21 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:19:31 by souchane          #+#    #+#             */
-/*   Updated: 2024/02/26 18:25:08 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/04 22:16:58 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 
-void check_coll(t_game *game)
+void	check_coll(t_game *game)
 {
-	int i;
-	int len;
-	int j;
-	
+	int		i;
+	int		len;
+	int		j;
+
 	len = 0;
 	i = 0;
-	while(game->map[i])
+	while (game->map[i])
 	{
 		j = -1;
 		while (game->map[i][++j])

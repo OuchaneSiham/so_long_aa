@@ -6,17 +6,18 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:36:26 by souchane          #+#    #+#             */
-/*   Updated: 2024/02/26 18:39:38 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/04 19:23:29 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }
-void ft_putstr(char *str)
+
+void	ft_putstr(char *str)
 {
 	int	i;
 

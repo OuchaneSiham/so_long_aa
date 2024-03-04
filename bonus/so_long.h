@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:40:37 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/01 16:44:59 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/02 17:07:56 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,10 @@ void move_left(t_game *game);
 void move_down(t_game *game);
 void move_up(t_game *game);
 int quit(t_game *game);
+//loop
+int 	gameloop(t_game *game);
+void 	message(t_game *game);
+void	door_loop(t_game *game);
+void	coll_loop(t_game *game);
+
 #endif
