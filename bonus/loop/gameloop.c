@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 17:08:15 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/04 22:40:19 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 13:54:45 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	gameloop(t_game *game)
 	coll_loop(game);
 	door_loop(game);
 	mlx_clear_window(game->mlx, game->mlx_win);
+	ft_null(game);
 	buildimgs(game);
 	message(game);
 	return (1);

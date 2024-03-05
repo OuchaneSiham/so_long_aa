@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:48:30 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/04 20:51:43 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 15:20:23 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,6 +115,7 @@ void	run(char *str)
 	game.mlx = mlx_init();
 	game.mlx_win = mlx_new_window(game.mlx, game.win_w, game.win_h, "siham" );
 	addimgs(&game);
+	ft_null(&game);
 	buildimgs(&game);
 	game.count = 0;
 	mlx_hook(game.mlx_win, 2, 0, move, &game);

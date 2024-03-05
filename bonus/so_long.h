@@ -6,59 +6,60 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:40:37 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/02 17:07:56 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 15:19:23 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
-#define SO_LONG_H
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
-#include <fcntl.h>
+# define SO_LONG_H
+# include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <string.h>
+# include <fcntl.h>
 # include <limits.h>
-#include <mlx.h>
+# include <mlx.h>
 
 typedef struct s_game
 {
-	char **map;
-	char *map_str;
-	int	x_player;
-	int	y_player;
-	int	x_exit;
-	int	y_exit;
-	void *mlx;
-	void *mlx_win;
-	int win_h;
-	int win_w;
-	void *wall;
-	void *floor;
-	void *player;
-	void *exit;
-	void *enemy;
-	void *coll;
-	int count;
-	int	fram_coin;
-	int	open;
-	int frame_door;
-} t_game;
-
-// #define BUFFER_SIZE 1
+	char	**map;
+	char	*map_str;
+	int		x_player;
+	int		y_player;
+	int		x_exit;
+	int		y_exit;
+	void	*mlx;
+	void	*mlx_win;
+	int		win_h;
+	int		win_w;
+	void	*wall;
+	void	*floor;
+	void	*player;
+	void	*exit;
+	void	*enemy;
+	void	*coll;
+	int		count;
+	int		fram_coin;
+	int		open;
+	int		frame_door;
+	int		i;
+	int		j;
+}	t_game;
 
 // check
-void check_coll(t_game *game);
-void check_exit(t_game *game);
-int ft_check_file(char *f_str);
-void check_none_char(t_game *game);
-void check_path(t_game *game);
-void check_player(t_game *game);
-void check(t_game *game);
-void checkmap(char **tab);
+void	check_coll(t_game *game);
+void	check_exit(t_game *game);
+int		ft_check_file(char *f_str);
+void	check_none_char(t_game *game);
+void	check_path(t_game *game);
+void	check_player(t_game *game);
+void	check(t_game *game);
+void	checkmap(char **tab);
 //libft
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 2
 # endif
+
 char	*get_str(char **str);
 char	*get_next_line(int fd);
 char	*gnl(int fd, char **line, char *buffer);
@@ -78,20 +79,20 @@ int		ft_strcmp(char *s1, char *s2);
 char	*ft_itoa(int n);
 //game
 void	run(char *str);
-void checkwin(t_game *game);
+void	checkwin(t_game *game);
 void	buildimgs(t_game *game);
-void  message(t_game *game);
+void	message(t_game *game);
 //move
-int  move(int key, t_game *game);
-void move_right(t_game *game);
-void move_left(t_game *game);
-void move_down(t_game *game);
-void move_up(t_game *game);
-int quit(t_game *game);
+int		move(int key, t_game *game);
+void	move_right(t_game *game);
+void	move_left(t_game *game);
+void	move_down(t_game *game);
+void	move_up(t_game *game);
+int		quit(t_game *game);
 //loop
-int 	gameloop(t_game *game);
-void 	message(t_game *game);
+int		gameloop(t_game *game);
+void	message(t_game *game);
 void	door_loop(t_game *game);
 void	coll_loop(t_game *game);
-
+void	ft_null(t_game *game);
 #endif

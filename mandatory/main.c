@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 15:28:31 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/04 19:00:05 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 15:41:17 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,5 @@ int	main(int ac, char **av)
 		run(str);
 	}
 	else
-		ft_putstr("error\n");
+		ft_putstr("error in the args\n");
 }

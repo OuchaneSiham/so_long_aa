@@ -6,12 +6,11 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:22:12 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/04 22:22:57 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 13:21:46 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
-
 
 void	check(t_game *game)
 {

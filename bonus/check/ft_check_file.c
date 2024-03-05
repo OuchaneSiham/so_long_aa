@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:11:52 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/04 22:18:04 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 15:39:34 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_check_file(char *f_str)
 	fd = open(f_str, O_RDONLY);
 	if (fd == -1)
 	{
-		printf("error");
+		printf("error ");
 		exit(1);
 	}
 	return (fd);

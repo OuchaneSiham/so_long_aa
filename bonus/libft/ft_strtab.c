@@ -6,18 +6,18 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 18:35:09 by souchane          #+#    #+#             */
-/*   Updated: 2024/02/26 18:40:04 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 12:58:25 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../so_long.h"
 
 int	ft_strtab(char **tab)
 {
-	int i;
+	int	i;
+
 	i = 0;
-	while(tab[i])
+	while (tab[i])
 		i++;
-	return i;
+	return (i);
 }

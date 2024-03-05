@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 12:40:37 by souchane          #+#    #+#             */
-/*   Updated: 2024/03/04 19:06:08 by souchane         ###   ########.fr       */
+/*   Updated: 2024/03/05 15:19:10 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int		ft_strcmp(char *s1, char *s2);
 void	run(char *str);
 void	checkwin(t_game *game);
 void	buildimgs(t_game *game);
-
+void	ft_null(t_game *game);
 //move
 int		move(int key, t_game *game);
 void	move_right(t_game *game);
@@ -87,4 +87,5 @@ void	move_left(t_game *game);
 void	move_down(t_game *game);
 void	move_up(t_game *game);
 int		quit(t_game *game);
+
 #endif
